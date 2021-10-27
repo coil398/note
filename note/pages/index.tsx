@@ -1,14 +1,18 @@
-import React from 'react'
+import { NextPage } from 'next'
 import styled from 'styled-components'
 
 interface Props {
-  className?: string
+  className: string
 }
 
-const Component: React.VFC<Props> = ({ className }) => (
+const Component: NextPage<Props> = ({ className }) => (
   <div className={className}>
-    <div>Hello World</div>
-    <div>あああ</div>
+    <div className="hero">
+      <h1 className="title">Next.js + Tailwind CSS</h1>
+      <p className="text-center text-teal-500 text-2xl py-4">
+        This is an Example.
+      </p>
+    </div>
   </div>
 )
 
