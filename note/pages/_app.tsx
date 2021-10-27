@@ -2,18 +2,14 @@ import '../styles/global.css'
 import { AppProps } from 'next/app'
 import { Provider } from 'react-redux'
 import store from '@/store'
-import Layout from '@/layouts'
-import { ThemeProvider } from '@emotion/react'
-import theme from '@/styles/theme'
+import Layout from '@/layout'
 
-const App = ({ Component, pageProps }: AppProps) => (
+const MyApp = ({ Component, pageProps }: AppProps) => (
   <Provider store={store}>
-    <ThemeProvider theme={theme}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </ThemeProvider>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   </Provider>
 )
 
-export default App
+export default MyApp

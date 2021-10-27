@@ -2,7 +2,7 @@ import { NextPage } from 'next'
 
 const Component: NextPage = () => (
   <>
-    <div>editor</div>
+    <div>sidebar</div>
   </>
 )
 

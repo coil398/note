@@ -1,9 +1,10 @@
+import { NextPage } from 'next'
 import Footer from './footer'
 import Header from './header'
 import NavBar from './navbar'
 import SideBar from './sidebar'
 
-const Component: React.FC = (props, { children }) => (
+const Component: NextPage = ({ children }) => (
   <>
     <Header />
     <NavBar />
