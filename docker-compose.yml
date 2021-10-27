@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  client:
+    build:
+      context: ./note
+    volumes:
+    - ./note:/note
+    command: npm run dev
+    ports:
+    - "127.0.0.1:3000:3000"
